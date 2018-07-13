@@ -7,11 +7,25 @@ Tip: Investigar el evento window.onload
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <head>
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-
+	<img src="people.png.jpeg">
+	<img src="people.png.jpeg">
+	<img src="people.png.jpeg">
+	<img src="people.png.jpeg">
+	<img src="people.png.jpeg">
+	<img src="people.png.jpeg">
+	<script>
+		$(function() {
+	        alert("Dom OK")
+		});
+		$(window).on("load", function() {
+	        alert("Todo OK")
+		});		
+	</script>
   </body>
 </html>
